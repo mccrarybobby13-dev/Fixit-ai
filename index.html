@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#176b52"><meta name="description" content="FixIt AI helps you troubleshoot everyday repairs, plan projects and estimate costs.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css"><title>FixIt AI — Repair smarter</title>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="FixIt AI home"><span class="brandmark">🔧</span><span><b>FixIt AI</b><small>REPAIR SMARTER. SAVE MONEY.</small></span></a>
+  <button class="iconbtn" id="savedShortcut" aria-label="Saved projects">♡</button>
+</header>
+<main>
+<section class="hero">
+  <p class="eyebrow">YOUR EVERYDAY REPAIR COMPANION</p>
+  <h1>Let's get that<br><em>fixed.</em></h1>
+  <p>Clear steps. Smarter planning. More money left in your pocket.</p>
+  <button class="primary" data-go="diagnose">Start a repair <span>→</span></button>
+</section>
+<section class="section">
+  <div class="sectionhead"><div><p class="eyebrow">GET STARTED</p><h2>What needs fixing?</h2></div></div>
+  <div class="categorygrid">
+    <button class="category" data-category="Plumbing"><span>🚿</span><b>Plumbing</b><small>Leaks, drains, faucets</small></button>
+    <button class="category" data-category="Electrical"><span>💡</span><b>Electrical</b><small>Lights, switches, outlets</small></button>
+    <button class="category" data-category="Appliances"><span>🧺</span><b>Appliances</b><small>Washer, dryer, fridge</small></button>
+    <button class="category" data-category="Home & DIY"><span>🪚</span><b>Home & DIY</b><small>Walls, doors, furniture</small></button>
+    <button class="category" data-category="Vehicles"><span>🚗</span><b>Vehicles</b><small>Basic maintenance</small></button>
+    <button class="category" data-category="Yard & Outdoor"><span>🌿</span><b>Yard & outdoor</b><small>Tools, fences, cleanup</small></button>
+  </div>
+</section>
+<section class="section featuregrid">
+  <button class="feature" data-go="estimate"><span class="featureicon">🧮</span><span><b>Project cost estimator</b><small>Plan materials and labor costs</small></span><span>›</span></button>
+  <button class="feature" data-go="saved"><span class="featureicon">📌</span><span><b>My saved projects</b><small>Pick up where you left off</small></span><span>›</span></button>
+  <button class="feature" data-go="safety"><span class="featureicon">🦺</span><span><b>Repair safety basics</b><small>Know when to stop and call a pro</small></span><span>›</span></button>
+</section>
+<p class="fineprint">FixIt AI provides general educational guidance, not a substitute for a qualified professional. Always follow product manuals and local codes.</p>
+</main>
+<nav class="bottomnav">
+  <button class="navitem active" data-go="home"><span>⌂</span>Home</button>
+  <button class="navitem" data-go="diagnose"><span>＋</span>Repair</button>
+  <button class="navitem" data-go="estimate"><span>＄</span>Estimate</button>
+  <button class="navitem" data-go="saved"><span>♡</span>Saved</button>
+</nav>
+<div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="sheet"><button class="close" id="closeModal" aria-label="Close">×</button><div id="modalContent"></div></div>
+</div>
+<script src="app.js"></script>
+</body></html>

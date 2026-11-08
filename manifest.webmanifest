@@ -1,0 +1,17 @@
+{
+  "name": "FixIt AI \u2014 Repair smarter",
+  "short_name": "FixIt AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f9f7",
+  "theme_color": "#176b52",
+  "description": "A practical companion for planning and troubleshooting everyday repairs.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
